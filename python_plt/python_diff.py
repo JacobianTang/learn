@@ -7,6 +7,22 @@ import matplotlib.pyplot as plt  #导入matplotlib库
 import numpy as np  #导入numpy库
 import mpl_toolkits.axisartist as axisartist
 
+
+from sympy.plotting import *
+from sympy import plot_implicit,Eq,And,Or
+from sympy import symbols
+from sympy import diff
+from sympy.functions import log,sin,exp,sqrt,ln
+import math as mt
+
+
+x1=symbols("x1")
+f=log(1+ exp(x1/2))
+dif_x1 = diff(f,x1).evalf(subs={"x1":-5.0})
+line_kx = dif_x1*(x1 -(-5.0) ) + cal_function_value(-5.0)
+print(dif_x1)
+
+
 #创建画布
 fig = plt.figure()
 #使用axisartist.Subplot方法创建一个绘图区对象ax
@@ -32,6 +48,11 @@ plt.xlim(-12,12)
 plt.ylim(-0.2, 1)
 #绘制图形
 plt.plot(x,y, c='k')
+
+tangnet_line_x=np.arange(-10,6,0.1)
+
+plt.plot(tangnet_line_x,[line_kx.evalf(subs={"x1":x}) for x in tangnet_line_x], c='g')
+
 
 ####画一条x=-5 和 x=0的虚线
 N=int(np.ceil(float(1-(-0.2))/0.1))
