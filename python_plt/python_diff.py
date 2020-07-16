@@ -38,13 +38,13 @@ ax.axis["top"].set_visible(False)
 ax.axis["right"].set_visible(False)
 
 #生成x步长为0.1的列表数据
-x = np.arange(-15,15,0.1)
+x = np.arange(-10,10,0.1)
 #生成sigmiod形式的y数据
 #y=1/(1+np.exp(-x))
 #y=np.exp(x)
 y=np.log(1+np.exp(x/2))
 #设置x、y坐标轴的范围
-plt.xlim(-12,12)
+plt.xlim(-10,10)
 plt.ylim(-0.2, 1)
 #绘制图形
 plt.plot(x,y, c='k')

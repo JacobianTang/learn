@@ -1,6 +1,13 @@
+*.a
+*.swp
+*.bin
+*.root
+*.i
+*.s
 *.o
 *.d
 *.cmake
-*/bin/*
-*/build/*
+*.so
+bin/
+build/
 *.DS_Store

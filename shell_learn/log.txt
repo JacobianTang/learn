@@ -1,0 +1,2 @@
+ls: badfile: No such file or directory
+-rwxr-xr-x  1 tangqi  staff  219 Mar 14 11:39 test1.sh
