@@ -6,8 +6,6 @@ def cal_function_value(x):
 import matplotlib.pyplot as plt  #导入matplotlib库
 import numpy as np  #导入numpy库
 import mpl_toolkits.axisartist as axisartist
-
-
 from sympy.plotting import *
 from sympy import plot_implicit,Eq,And,Or
 from sympy import symbols
