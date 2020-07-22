@@ -9,12 +9,6 @@ from sympy import diff
 from sympy.functions import log,sin,exp,sqrt,ln
 import math as mt
 
-
-
-def exponential_function(a,x):
-    return a**x
-
-
 #创建画布
 fig = plt.figure()
 #使用axisartist.Subplot方法创建一个绘图区对象ax
@@ -30,13 +24,8 @@ ax.axis["x"].set_axisline_style("-|>", size = 1.0)
 ax.axis["y"] = ax.new_floating_axis(1,0)
 ax.axis["y"].set_axisline_style("-|>", size = 1.0)
 
-
 #生成x步长为0.1的列表数据
 x = np.arange(-10,10,0.1)
-#生成sigmiod形式的y数据
-#y=1/(1+np.exp(-x))
-#y=np.exp(x)
-#y=np.log(1+np.exp(x/2))
 y=np.power(x,0.5)
 #设置x、y坐标轴的范围
 plt.xlim(-10,10)
@@ -56,8 +45,5 @@ plt.text(4.0, 4.0, r'$y=x$',fontsize=8)
 plt.text(4.0,np.power(4.0,2), r'$y=x^2$', fontsize=8)
 
 plt.title(r'$x^{\mu},\mu = 0.5 \quad 1 \quad 2 $', fontsize=20)
-
-
-
 
 plt.show()

@@ -24,11 +24,6 @@ def get_n_degree_taylor(n):
                 pre_y = dif_x
     return sum 
 
-
-def exponential_function(a,x):
-    return a**x
-
-
 #创建画布
 fig = plt.figure()
 #使用axisartist.Subplot方法创建一个绘图区对象ax

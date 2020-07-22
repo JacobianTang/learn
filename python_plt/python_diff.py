@@ -18,8 +18,7 @@ x1=symbols("x1")
 f=log(1+ exp(x1/2))
 dif_x1 = diff(f,x1).evalf(subs={"x1":-5.0})
 line_kx = dif_x1*(x1 -(-5.0) ) + cal_function_value(-5.0)
-print(dif_x1)
-
+#print(dif_x1)
 
 #创建画布
 fig = plt.figure()
@@ -38,8 +37,6 @@ ax.axis["right"].set_visible(False)
 #生成x步长为0.1的列表数据
 x = np.arange(-10,10,0.1)
 #生成sigmiod形式的y数据
-#y=1/(1+np.exp(-x))
-#y=np.exp(x)
 y=np.log(1+np.exp(x/2))
 #设置x、y坐标轴的范围
 plt.xlim(-10,10)

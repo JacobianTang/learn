@@ -9,8 +9,6 @@ from sympy import diff
 from sympy.functions import log,sin,exp,sqrt,ln
 import math as mt
 
-
-
 #创建画布
 fig = plt.figure()
 #使用axisartist.Subplot方法创建一个绘图区对象ax
@@ -48,9 +46,7 @@ plt.text(3.0,np.power(mt.e,3.0), r'$y=e^x$', fontsize=8)
 
 plt.title(r'$a^x ,a = 0.5 \quad 2 \quad e $', fontsize=20)
 
-
 # plt.xticks([])
 # plt.yticks([])
-
 
 plt.show()
