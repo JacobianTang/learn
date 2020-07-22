@@ -71,13 +71,4 @@ plt.text(-10,cal_function_value(-10) + cal_function_value(-10), r'$y=f(x)$', fon
 plt.xticks([])
 plt.yticks([])
 
-# ax.spines['top'].set_visible(False)
-# ax.spines['right'].set_visible(False)
-
-# ax.axis["x"] = ax.new_floating_axis(0,0)
-# ax.axis["x"].set_axisline_style("->", size = 1.0)
-# 添加y坐标轴，且加上箭头
-# ax.axis["y"] = ax.new_floating_axis(1,0)
-# ax.axis["y"].set_axisline_style("-|>", size = 1.0)
-
 plt.show()
