@@ -53,7 +53,6 @@ x_right=np.arange(2,10,0.1)
 plt.plot(x_left,[f.evalf(subs={"x1":x}) for x in x_left], c='k')
 plt.plot(x_right,[3 + f.evalf(subs={"x1":x}) for x in x_right], c='k')
 
-
 # circ1 = plt.Circle((1.95,1.95-1.0),0.08,color='k',alpha=0.3)
 # ax.add_patch(circ1)
 
