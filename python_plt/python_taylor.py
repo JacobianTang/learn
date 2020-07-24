@@ -49,22 +49,15 @@ plt.xlim(-10,10)
 # plt.ylim(-0.2, 1)
 #绘制图形
 plt.plot(x,y, c='k')
-
 f_n = get_n_degree_taylor(2)
 print(f_n)
 y_n = [f_n.evalf(subs={"x":x_i}) for x_i in x]
-
 # y1=np.power(x,1)
 plt.plot(x,y_n, c='b')
 # y2=np.power(x,2)
 # plt.plot(x,y2, c='k')
-
 # plt.text(8.0,np.power(8.0,0.5) , r'$y=x^{0.5}$',verticalalignment="baseline",horizontalalignment="right",fontsize=8)
-
 # plt.text(4.0, 4.0, r'$y=x$',fontsize=8)
-
 # plt.text(4.0,np.power(4.0,2), r'$y=x^2$', fontsize=8)
-
 # plt.title(r'$x^{\mu},\mu = 0.5 \quad 1 \quad 2 $', fontsize=20)
-
 plt.show()

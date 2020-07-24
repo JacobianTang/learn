@@ -30,7 +30,6 @@ y=np.power(0.5,x)
 #设置x、y坐标轴的范围
 
 plt.xlim(-3,3)
-# plt.ylim(-0.2, 1)
 #绘制图形
 plt.plot(x,y, c='k')
 y1=np.power(2,x)
